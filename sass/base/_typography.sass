@@ -1,0 +1,44 @@
+body
+    font-family: Lato, sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    line-height: 1.7
+    color: $text-color
+
+.sub-heading
+    background: linear-gradient(to right , $color-primary , $color-secondary)
+    font-weight: 700
+    text-transform: uppercase
+    transition: all 0.15s ease-in
+    font-size: 3.5rem
+    display: inline-block
+    -webkit-background-clip: text
+    color: transparent
+    &:hover
+        transform: skewX(3deg) skewY(4deg) scale(1.1)
+        text-shadow: 0 1rem 2.5rem lighten($color-black,60%)
+
+.heading-primary
+    text-align: center
+    text-transform: uppercase
+    color: $color-white
+    letter-spacing: 1.4rem
+    font-weight: 400
+    backface-visibility: hidden
+    margin-bottom: 10rem
+
+    span
+        display: block
+
+    &--main
+        font-size: 5.5rem
+        letter-spacing: 3.46rem
+        animation: fadein-left 0.8s ease-in
+        animation-fill-mode: forwards
+
+    &--sub
+        font-size: 1.8rem
+        font-weight: 700
+        letter-spacing: 1.73rem
+        animation: fadein-right 0.8s ease-in
+        animation-fill-mode: forwards

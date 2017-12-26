@@ -1,0 +1,55 @@
+// keyframes animations
+.animate
+    animation:
+        duration: 0.5s
+        timing-function: ease-in-out
+    &-forward
+        animation-fill-mode: forwards
+    &-backward
+        animation-fill-mode: backwards
+    &-slidein
+        &-bottom
+            animation-name: slidein-bottom
+
+@keyframes fadein-left
+    0%
+        transform: translateX(-10%)
+        opacity: 0
+
+    70%
+        transform: translateX(1%)
+
+    100%
+        transform: translateX(0)
+        opacity: 1
+
+@keyframes fadein-right
+    0%
+        transform: translateX(10%)
+        opacity: 0
+
+    70%
+        transform: translateX(-1%)
+
+    100%
+        transform: translateX(0)
+        opacity: 1
+
+@keyframes fadein-bottom
+    0%
+        opacity: 0
+        transform: translateY(7rem)
+
+    70%
+        transform: translateY(-1rem)
+
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+@keyframes slidein-bottom
+    0%
+        transform: translateY(100%)
+
+    100%
+        transform: translateY(0)
