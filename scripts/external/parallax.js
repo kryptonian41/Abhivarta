@@ -9,9 +9,6 @@ $(window).scroll(function() {
   });
   if (wscroll > $('.section-about').offset().top) {
     console.log("flag");
-    $('.dome-image').addClass('animate animate-forward animate-slidein-bottom');
+    $('.dome-image').addClass('animate animate-backward animate-slidein-bottom');
   }
 });
-//($('.section-about').offset().top + (($(window).height() * 1.2) - $(window).height() ) ) 
-console.log('offset : '+$('.section-about').offset().top);
-console.log('height : '+$(window).height());

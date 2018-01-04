@@ -186,7 +186,7 @@ body {
 
 .btn:link, .btn:visited {
   display: inline-block;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   padding: 1.5rem 4rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -272,10 +272,9 @@ body {
 
 .dome-image {
   position: relative;
-  left: 20px;
+  left: 2rem;
   margin-bottom: -60px;
   width: 100%;
-  height: auto;
-  transform: translateY(100%); }
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */

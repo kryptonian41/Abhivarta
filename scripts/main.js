@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // for the navigation tab
   $(".nav-toggle").on("click", function() {
     $(this).toggleClass("nav-toggle-clicked");
     $(".nav-bar").toggleClass("u-collapse");
@@ -8,12 +9,11 @@ $(document).ready(function() {
         height: navHeight + "px"
       });
     } else {
-      var navHeight = 0
+      var navHeight = 0;
       $(".nav-bar").css({
         height: navHeight + "px"
       });
     }
   });
-
-  
+  // end for navigation tab
 });
