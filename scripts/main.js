@@ -20,6 +20,15 @@ $(document).ready(function() {
 
 });
 
+// Marquee  
+
+$('.marquee-wrapper__text').marquee({
+  duplicated: false,
+  allowCss3Support: true,
+  css3easing: 'linear',
+  direction: 'right',
+  pauseOnHover: true
+});
 
 var type1 = new Typed('.typed1',{
     strings: ["About Abhivarta"],
