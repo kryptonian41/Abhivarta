@@ -9,6 +9,8 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <!-- pagepiling -->
+  <link rel="stylesheet" href="./css/pagepiling/jquery.pagepiling.min.css">
   <!-- stylesheets -->
   <link rel="stylesheet" href="./css/glitch.css">
   <link rel="stylesheet" href="css/style.css">
@@ -19,54 +21,69 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo-box">
-      <img src="./src/images/abhivarta logo new.png" alt="" class="logo-box--image">
-    </div>  
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
-          <div class="tile">
-            <a href="./pages/about_abhivarta.html">About Abhivarta</a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
-          <div class="tile">
-            <a href="./pages/about_manipal.html">About Manipal</a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
-          <div class="tile">
-            <a href="./pages/register.html">Register</a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
-          <div class="tile">
-            <a href="#">Team</a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
-          <div class="tile">
-            <a href="#">Gallery</a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
-          <div class="tile">
-            <a href="#">Contact</a>
-          </div>
-        </div>
+  <div id="pagepiling">
+    <div class="section">
+      <div class="landing-page">
+        <!-- <div class="logo-box">
+          <img src="./src/images/abhivarta logo new.png" alt="" class="logo-box--image">
+        </div> -->
       </div>
     </div>
+    <div class="section" id="tile-container">
+      <div class="header">
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
+              <div class="tile">
+                <a href="./pages/about_abhivarta.html">About Abhivarta</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
+              <div class="tile">
+                <a href="./pages/about_manipal.html">About Manipal</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
+              <div class="tile">
+                <a href="./pages/register.html">Register</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
+              <div class="tile">
+                <a href="#">Team</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
+              <div class="tile">
+                <a href="#">Gallery</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 tile-wrapper">
+              <div class="tile">
+                <a href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- marquee -->
+        <!-- <div class="marquee-wrapper">
+          <div class="marquee-wrapper__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima soluta eum, cumque autem itaque repudiandae.
+          </div>
+        </div> -->
+        <!-- marquee end -->
+      </div>
+    </div>
+    <!-- <div class="section">Some section</div>
+    <div class="section">Some section</div> -->
+  </div>
 
-    <div class="marquee-wrapper">
-      <div class="marquee-wrapper__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima soluta eum, cumque autem itaque repudiandae.
-      </div>
-    </div>
-  </header>
   <!-- scripts -->
   <script src="./scripts/external/jquery-3.2.1.min.js"></script>
   <script src="./scripts/external/jquery_marquee_plugin/jquery.marquee.min.js"></script>
+  <!-- pagepiling script -->
+  <script src="./scripts/external/pagepiling/jquery.pagepiling.min.js"></script>
   <script src="./scripts/external/bootstrap/bootstrap.min.js"></script>
   <script src="./scripts/external/bootstrap/npm.js"></script>
   <script src="./scripts/external/typed/typed.js"></script>

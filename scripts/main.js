@@ -16,7 +16,38 @@ $(document).ready(function() {
     }
   });
   // end for navigation tab
+  
+  // pagepiling start
 
+  $('#pagepiling').pagepiling({
+    menu: null,
+      direction: 'horizontal',
+      verticalCentered: true,
+      sectionsColor: [],
+      anchors: ['landing_page','tiles','page3','page4'],
+      scrollingSpeed: 700,
+      easing: 'swing',
+      loopBottom: false,
+      loopTop: false,
+      css3: true,
+      navigation: {
+          'textColor': '#FFF',
+          'bulletsColor': '#FFF',
+          'position': 'right'
+          // 'tooltips': ['section1', 'section2', 'section3', 'section4']
+      },
+      // normalScrollElements: '#tile-container',
+      normalScrollElementTouchThreshold: 5,
+      touchSensitivity: 5,
+      keyboardScrolling: true,
+      sectionSelector: '.section',
+      animateAnchor: false,
+
+  //events
+  onLeave: function(index, nextIndex, direction){},
+  afterLoad: function(anchorLink, index){},
+  afterRender: function(){},
+});
 
 });
 
