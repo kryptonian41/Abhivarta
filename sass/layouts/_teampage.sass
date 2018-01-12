@@ -1,0 +1,38 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.team-wrapper
+  min-height: 100vh
+  background:
+    image: url("../../src/images/bck.png")
+.team
+  height: 30vh
+  background: linear-gradient(to right, transparentize(#cd0100,0.4), transparentize(#ed3e00,0.4)) , url("../../src/images/bck.png")
+  &__members
+    min-height: 70vh
+    padding: 7rem
+    &::after
+      +clearfix
+    &__card
+      position: relative
+      width: 23%
+      height: 35vh
+      margin-right: 2rem
+      margin-bottom: 2rem      
+      float: left
+      background: transparentize(#fff,0.3)
+      border: 1px solid #cd0100
+      border-radius: 10px
+      transition: transform 0.3s linear
+      opacity: 0
+      &:hover
+        z-index: 1000
+        transform: perspective(500px) rotateY(180deg)
+      // &:nth-child(even)
+      //   margin-top: 4rem       
+        &:hover
+          z-index: 1000
+          transform: perspective(500px) rotateY(180deg)
+          

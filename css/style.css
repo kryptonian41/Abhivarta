@@ -40,6 +40,10 @@ body {
     animation-fill-mode: forwards; }
   .animate-backward {
     animation-fill-mode: backwards; }
+  .animate-both {
+    animation-fill-mode: both; }
+  .animate-fadein-left {
+    animation-name: fadein-left; }
   .animate-slidein-bottom {
     animation-name: slidein-bottom; }
 
@@ -136,6 +140,41 @@ body {
     background: transparent; }
   .header .js-marquee-wrapper {
     color: white; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.team-wrapper {
+  min-height: 100vh;
+  background-image: url("../../src/images/bck.png"); }
+
+.team {
+  height: 30vh;
+  background: linear-gradient(to right, rgba(205, 1, 0, 0.6), rgba(237, 62, 0, 0.6)), url("../../src/images/bck.png"); }
+  .team__members {
+    min-height: 70vh;
+    padding: 7rem; }
+    .team__members::after {
+      content: "";
+      clear: both;
+      display: table; }
+    .team__members__card {
+      position: relative;
+      width: 23%;
+      height: 35vh;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      float: left;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid #cd0100;
+      border-radius: 10px;
+      transition: transform 0.3s linear;
+      opacity: 0; }
+      .team__members__card:hover {
+        z-index: 1000;
+        transform: perspective(500px) rotateY(180deg); }
 
 .btn:link, .btn:visited {
   display: inline-block;
