@@ -267,7 +267,8 @@ body {
   height: 50%;
   padding: 2rem;
   height: 35vh;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .tile > a {
     text-align: center;
     text-decoration: none;
@@ -276,6 +277,27 @@ body {
     position: relative;
     width: 100%;
     height: 100%; }
+
+.back-drop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  background: white; }
+  .back-drop:hover {
+    opacity: 0.8; }
+  .back-drop > .title {
+    color: black;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); }
 
 .landing-page {
   width: 100%;
