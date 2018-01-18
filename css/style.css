@@ -235,6 +235,74 @@ body {
 #member4 {
   background-image: url("../../src/images/team/WhatsApp Image 2018-01-17 at 11.00.05 PM.jpeg"); }
 
+.special {
+  background: transparent;
+  margin-top: 2rem;
+  min-height: 40vh;
+  height: auto;
+  flex-basis: 50%;
+  display: flex;
+  position: relative;
+  background: linear-gradient(to right, rgba(205, 1, 0, 0.8), rgba(237, 62, 0, 0.8)), url("../../src/images/7123.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.7); }
+  .special:hover {
+    transform: scale(1.03); }
+    .special:hover > .special--image {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1); }
+    .special:hover > .special--content > hr {
+      width: 100%; }
+  .special--content {
+    color: white;
+    padding: 15px 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-family: "Raleway";
+    text-align: center; }
+    .special--content > hr {
+      outline: none;
+      border: none;
+      width: 80%;
+      height: 2px;
+      margin: 0 auto;
+      background: white;
+      transition: width 0.4s ease-out; }
+    .special--content > h1 {
+      margin: 0 0 5px 0;
+      font-weight: normal; }
+    .special--content > p {
+      font-size: 22px;
+      margin: 0; }
+  .special--image {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) scale(1.12);
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid white;
+    padding: 40px;
+    opacity: 0;
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out; }
+    .special--image-img {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+      border: 3px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.7);
+      background-size: cover;
+      background-position: center; }
+
 @media (max-width: 676px) {
   .flex-row {
     padding: 10px 35px; }
@@ -246,7 +314,10 @@ body {
         font-size: 18px; }
       .flex-column__card .member--image {
         min-height: 30vh;
-        background-size: cover; } }
+        background-size: cover; }
+
+  .special {
+    flex-basis: 80%; } }
 .btn:link, .btn:visited {
   display: inline-block;
   letter-spacing: 0.1rem;

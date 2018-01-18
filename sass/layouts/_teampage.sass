@@ -102,6 +102,82 @@
   background:
     image:  url("../../src/images/team/WhatsApp Image 2018-01-17 at 11.00.05 PM.jpeg")
 
+// special
+
+.special
+  background: transparent
+  margin-top: 2rem
+  min-height: 40vh
+  height: auto
+  flex-basis: 50%
+  display: flex
+  position: relative
+  background: linear-gradient(to right, transparentize(#cd0100,0.2), transparentize(#ed3e00,0.2)) , url("../../src/images/7123.jpg")
+  background:
+    size: cover
+    position: center
+  // overflow: hidden
+  transition: transform 0.3s ease-in-out
+  box-shadow: 0px 3px 18px rgba(0,0,0,0.7)
+  &:hover
+    transform: scale(1.03)
+    >.special--image
+      opacity: 1
+      transform: translate(-50%,-50%) scale(1)
+    >.special--content
+      >hr
+        width: 100%
+  &--content
+    color: white
+    padding: 15px 30px
+    position: absolute
+    width: 100%
+    bottom: 0
+    font-family: 'Raleway'
+    text-align: center
+    >hr
+      outline: none
+      border: none
+      width: 80%
+      height: 2px
+      margin: 0 auto
+      background: white
+      transition: width 0.4s ease-out
+    >h1
+      margin: 0 0 5px 0
+      font-weight: normal
+    >p
+      font-size: 22px
+      margin: 0
+  &--image
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%,-50%) scale(1.12)
+    width: 190px
+    height: 190px
+    border-radius: 50%
+    background: transparent
+    border: 2px solid white
+    padding: 40px
+    opacity: 0
+    // transition: width 0.3s ease-out , height 0.3s ease-out
+    transition: opacity 0.4s ease-out , transform 0.4s ease-out
+    &-img
+      position: absolute
+      width: 170px
+      height: 170px
+      left: 50%
+      top: 0
+      transform: translate(-50%,-50%)
+      border: 3px solid #fff
+      border-radius: 50%
+      box-shadow: 0px 3px 18px rgba(0,0,0,0.7)  
+      background:
+        size: cover
+        position: center
+    
+
 
 @media (max-width: 676px)
   .flex
@@ -117,3 +193,5 @@
         .member--image
           min-height: 30vh
           background-size: cover
+  .special
+    flex-basis: 80%
