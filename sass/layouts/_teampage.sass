@@ -1,7 +1,4 @@
-*
-  margin: 0
-  padding: 0
-  box-sizing: border-box
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto')
 
 .team-wrapper
   min-height: 100vh
@@ -9,30 +6,114 @@
     image: url("../../src/images/bck.png")
 .team
   height: 30vh
-  background: linear-gradient(to right, transparentize(#cd0100,0.4), transparentize(#ed3e00,0.4)) , url("../../src/images/bck.png")
-  &__members
-    min-height: 70vh
-    padding: 7rem
-    &::after
-      +clearfix
+  background: linear-gradient(to right, transparentize(#cd0100,0.2), transparentize(#ed3e00,0.2)) , url("../../src/images/bck.png")
+  &__input
+    text-align: center
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    >select
+      display: inline-block
+      padding: 10px 15px
+      width: 70%
+      background: #333
+      color: white
+      outline: none
+      border: none
+      border-bottom: 2px solid white
+      >option
+        background: #333
+        color: white
+        font-size: 20px
+        // padding: 10px 15px
+        
+.flex 
+  &-row
+    padding: 20px 60px
+    background: transparent
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    align-content: center
+    // margin-top: 10px
+  &-column
+    background: transparent
+    margin-top: 2rem
+    height: 40vh
+    flex-basis: 45%
+    position: relative
+    overflow: hidden
+    transition: transform 0.3s ease-in-out
+    box-shadow: 0px 3px 18px rgba(0,0,0,0.7)
     &__card
-      position: relative
-      width: 23%
-      height: 35vh
-      margin-right: 2rem
-      margin-bottom: 2rem      
-      float: left
-      background: transparentize(#fff,0.3)
-      border: 1px solid #cd0100
-      border-radius: 10px
-      transition: transform 0.3s linear
-      opacity: 0
-      &:hover
-        z-index: 1000
-        transform: perspective(500px) rotateY(180deg)
-      // &:nth-child(even)
-      //   margin-top: 4rem       
-        &:hover
-          z-index: 1000
-          transform: perspective(500px) rotateY(180deg)
-          
+      width: 100%
+      height: 100%
+      display: flex
+      >div
+        flex-basis: 50%
+        height: auto
+      >.member--image
+          background: 
+            size: cover
+            position: center
+            repeat: no-repeat
+      &--content
+        background: linear-gradient(to right, transparentize(#cd0100,0.2), transparentize(#ed3e00,0.2)) , url("../../src/images/7123.jpg")
+        background-size: cover
+        padding: 20px
+        font-family: 'Raleway'
+        h1
+          color: white
+          margin: 0
+          font-size: 25px
+          font-weight: normal
+          line-height: 29px
+        >p
+          color: white
+          font-size: 20px
+          margin: 20px 0 0 0
+        .line
+          height: 1.5px
+          border: none
+          margin-top: 20px
+          outline: none
+          background: linear-gradient(to left , rgba(0,0,0,1), rgba(0,0,0,0))
+          width: 75%
+          transition: width 0.4s ease-in
+    &:hover
+      transform: scale(1.07)
+      .flex-column__card
+        &--content
+          .line
+            width: 100%
+#member3
+  background:
+    image:  url("../../src/images/team/aman.jpg")
+#member2
+  background:
+    image:  url("../../src/images/team/reddy.JPG")
+    size: 170%
+#member1
+  background:
+    image:  url("../../src/images/team/sayyam.jpg")
+
+#member4
+  background:
+    image:  url("../../src/images/team/WhatsApp Image 2018-01-17 at 11.00.05 PM.jpeg")
+
+
+@media (max-width: 676px)
+  .flex
+    &-row
+      padding: 10px 35px
+    &-column
+      min-height: 60vh
+      flex-basis: 80%
+      &__card
+        flex-direction: column
+        &--content
+          h1
+            font-size: 18px
+        .member--image
+          min-height: 30vh
+          background-size: cover
