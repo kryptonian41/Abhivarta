@@ -78,7 +78,7 @@
           border: none
           margin-top: 20px
           outline: none
-          background: linear-gradient(to left , rgba(0,0,0,1), rgba(0,0,0,0))
+          background: linear-gradient(to left , rgba(255,255,255,1), rgba(255,255,2555,0))
           width: 75%
           transition: width 0.4s ease-in
     &:hover
@@ -146,6 +146,7 @@
     >h1
       margin: 0 0 5px 0
       font-weight: normal
+      white-space: nowrap
     >p
       font-size: 22px
       margin: 0
@@ -165,8 +166,8 @@
     transition: opacity 0.4s ease-out , transform 0.4s ease-out
     &-img
       position: absolute
-      width: 170px
-      height: 170px
+      width: 15vw
+      height: 15vw
       left: 50%
       top: 0
       transform: translate(-50%,-50%)
@@ -182,9 +183,9 @@
 @media (max-width: 676px)
   .flex
     &-row
-      padding: 10px 35px
+      padding: 10px 25px
     &-column
-      flex-basis: 80%
+      flex-basis: 90%
       &__card
         flex-direction: column
         &--content
@@ -194,4 +195,38 @@
           min-height: 30vh
           background-size: cover
   .special
-    flex-basis: 80%
+    flex-basis: 90%
+    &--content
+      height: 60%
+      h1
+        font-size: 20px
+        margin-top: 10px
+    &--image
+      width: 35vh
+      height: 25vh
+      &-img
+        width: 32vh
+        height: 32vh  
+
+@media (max-width: 676px)
+  .flex
+    &-row
+      padding: 10px 25px
+    &-column
+      flex-basis: 90%
+      &__card
+        flex-direction: column
+        &--content
+          h1
+            font-size: 18px
+        .member--image
+          min-height: 30vh
+          background-size: cover
+  .special
+    flex-basis: 90%
+    &--image
+      width: 25vh
+      height: 25vh
+      &-img
+        width: 22vh
+        height: 22vh  
